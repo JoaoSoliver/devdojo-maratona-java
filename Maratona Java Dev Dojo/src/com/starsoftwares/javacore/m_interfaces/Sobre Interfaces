@@ -1,0 +1,20 @@
+
+	Interface é uma espécie de contrato. Informa o que deve ser feito mas não como deve ser feito.
+	É muito utilizada em polimorfismo.
+	A nomeclatura geralmente termina com "vel" - Adjetivos terminados em -vel - (tributável, pagável...). 
+	Ou começando com a letra I (ITributavel, IPagavel);
+	Uma interface existe para ser "extendida" - implementada é o termo correto a ser utilizado.
+	Seus métodos são obrigatoriamente sem corpo.
+	Todos os seus métodos são abstratos. Implicitamente todos eles já serão public e abstracts.
+	Um ponto que precisa ser levado em conta, quando se trata da sobrescrição de seus métodos, é que quando ele é 
+	sobrescrito seu modificador não pode ser mais restritivo do que foi definido inicialmente na Interface.
+	-> private -> default -> protected -> public
+	* Não sendo utilizando nenhum modificador de acesso fica subtendido que ele está usando o default. E caso uma classe implemente  essa 
+	  Interface e não coloque um modificador de acesso no método um erro será mostrado.
+	* Em toda sobrescrita de uma Interface o método é obrigatoriamente public  
+	Quanto aos atributos, todos serão constantes - public static final - implicitamente ou não.
+	OUtra coisa que diferencia uma Interface de uma Classe abstrata é que uma classe pode implementar mais de uma Interface.
+	Utilizando uma Interface a classe que a utiliza é um(a), e não tem um.
+	As classes para utilizarem uma mesma Interface não precisam ter relação. 
+	Por exemplo poderiamos ter uma outra classe, Carro por exemplo que seria tributável e/ou transportável, dependendo da regra de negócio.
+	* Não se instancia um objeto de uma Interface.

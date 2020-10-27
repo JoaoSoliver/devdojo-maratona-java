@@ -1,0 +1,5 @@
+Classe final = nunca pode ser extendida, só instanciada
+Variavel final = referencia constante
+Metodo final = Não pode ser sobreescrito
+Metodo abstrato = obrigatoriamente deve ser sobrescrito
+Classe Abstrata= Não pode ser instanciada
